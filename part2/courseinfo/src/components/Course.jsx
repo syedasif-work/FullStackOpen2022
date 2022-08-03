@@ -10,11 +10,6 @@ const Content = ({parts}) => {
   )
 }
 
-// const total = parts.reduce((a,b) => {
-//     console.log(a)
-//     return a.exercises + b
-// }, 0)
-
 const Total = ({parts}) => <h3>Number of exercises {parts.reduce((a,b) => a + b.exercises, 0)}</h3>
 
 const Course = ({course}) => {
